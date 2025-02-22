@@ -13,5 +13,9 @@ public class Tienda {
         this.idTributario = idTributario;
         this.computadores = new ArrayList<>();
     }  
-
+    public String getNombre() { return nombre; }
+    public String getPropietario() { return propietario; }
+    public String getIdTributario() { return idTributario; }
+    public List<Computador> getComputadores() { return computadores; }
 }
+

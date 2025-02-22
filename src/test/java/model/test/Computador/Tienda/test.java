@@ -14,7 +14,7 @@ public class test {
     }
     @Test
     public void testCrearTienda() {
-        // Assert
+        
         assertThat(tienda.getNombre(), is("TechStore"));
         assertThat(tienda.getPropietario(), is("Juan Perez"));
         assertThat(tienda.getIdTributario(), is("123456789"));

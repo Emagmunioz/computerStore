@@ -22,5 +22,17 @@ public class test {
         Computador computador = new Computador("Dell", 16, "Intel i7", "Windows 10", 1500.0);
         tiendaService.agregarComputador(computador);
 
+        assertThat(tiendaService.listarComputadores(), hasSize(1));
+        assertThat(tiendaService.listarComputadores().get(0).getMarca(), is("Dell"));
+    } @Test
+    public void testEliminarComputador() {
+        tiendaService.agregarComputador(new Computador("HP", 8, "AMD Ryzen 5", "Windows 11", 1200.0));
+        boolean eliminado = tiendaService.eliminarComputador("HP");
+
+        assertThat(eliminado, is(true));
+        assertThat(tiendaService.listarComputadores(), hasSize(0));
+    }
+
 }
-}
+   
+

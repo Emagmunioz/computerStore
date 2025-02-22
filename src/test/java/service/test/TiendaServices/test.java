@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import java.util.List;
 import model.Tienda;
+import service.TiendaService;
 import model.Computador;
 
 public class test {
@@ -16,6 +17,10 @@ public class test {
         tienda = new Tienda("TechStore", "Juan Perez", "123456789");
         tiendaService = new TiendaService(tienda);
     }
+@Test
+    public void testAgregarComputador() {
+        Computador computador = new Computador("Dell", 16, "Intel i7", "Windows 10", 1500.0);
+        tiendaService.agregarComputador(computador);
 
-
+}
 }

@@ -11,5 +11,9 @@ public class TiendaService {
     public void agregarComputador(Computador computador) {
         tienda.getComputadores().add(computador);
     }
+    @Override
+    public List<Computador> listarComputadores() {
+        return tienda.getComputadores();
+    }
 
 }

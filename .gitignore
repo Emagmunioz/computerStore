@@ -1,0 +1,5 @@
+# Carpetas de compilación y temporales
+bin/
+obj/
+.vs/
+target/

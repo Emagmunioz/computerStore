@@ -8,7 +8,7 @@ import model.Tienda;
 import service.TiendaService;
 import model.Computador;
 
-public class test {
+public class TiendaServiceTest {
     private Tienda tienda;
     private TiendaService tiendaService;
 
